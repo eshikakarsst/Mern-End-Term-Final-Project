@@ -95,9 +95,9 @@ export default function TopicCard({ topic, groupId, onStatusChange, onAssign, is
           <form onSubmit={addResource} className="mt-3 grid gap-2">
             <label className="sr-only" htmlFor={`resource-title-${topic._id}`}>Resource title</label>
             <input id={`resource-title-${topic._id}`} value={resourceTitle} onChange={event => setResourceTitle(event.target.value)} placeholder="Resource title" maxLength={100} className="field min-h-9 text-xs" required />
-            <div className="flex gap-2">
+            <div className="grid grid-cols-[minmax(0,1fr)_96px_auto] gap-2">
               <label className="sr-only" htmlFor={`resource-url-${topic._id}`}>Resource URL</label>
-              <input id={`resource-url-${topic._id}`} type="url" value={resourceUrl} onChange={event => setResourceUrl(event.target.value)} placeholder="https://..." className="field min-h-9 min-w-0 flex-1 text-xs" required />
+              <input id={`resource-url-${topic._id}`} type="url" value={resourceUrl} onChange={event => setResourceUrl(event.target.value)} placeholder="Paste URL (https://...)" className="field min-h-9 min-w-0 text-xs" required />
               <label className="sr-only" htmlFor={`resource-type-${topic._id}`}>Resource type</label>
               <select id={`resource-type-${topic._id}`} value={resourceType} onChange={event => setResourceType(event.target.value)} className="field min-h-9 w-[94px] px-2 text-xs">
                 <option value="link">Link</option>
