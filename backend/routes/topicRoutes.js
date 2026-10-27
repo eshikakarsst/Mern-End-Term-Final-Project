@@ -1,0 +1,10 @@
+import express from "express";
+import { createTopic, getTopicsBySubject, assignTopic, updateTopicStatus, deleteTopic } from "../controllers/topicController.js";
+import { protect, requireGroupMember, requireGroupAdmin } from "../middleware/auth.js";
+const router = express.Router(); router.use(protect);
+router.post("/:groupId/subject/:subjectId", requireGroupMember, requireGroupAdmin, createTopic);
+router.get("/:groupId/subject/:subjectId", requireGroupMember, getTopicsBySubject);
+router.post("/:groupId/:topicId/assign", requireGroupMember, requireGroupAdmin, assignTopic);
+router.patch("/:groupId/:topicId/status", requireGroupMember, updateTopicStatus);
+router.delete("/:groupId/:topicId", requireGroupMember, requireGroupAdmin, deleteTopic);
+export default router;
