@@ -22,7 +22,6 @@ StudySync is a full-stack study-group collaboration application that helps stude
 - [Available Scripts](#available-scripts)
 - [Security Notes](#security-notes)
 - [Known Limitations](#known-limitations)
-- [Deployment](#deployment)
 - [Demo](#demo)
 - [Future Improvements](#future-improvements)
 - [Author](#author)
