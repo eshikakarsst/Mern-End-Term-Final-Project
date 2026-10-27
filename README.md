@@ -266,32 +266,11 @@ For deployment, set these values in the hosting provider's environment-variable 
 - Real-time group events and chat require an authenticated Socket.IO connection; group room access depends on membership checks.
 - Production cookie, HTTPS, and CORS settings must be configured for the deployment environment.
 
-## Deployment
-
-The project is intended to be deployed with a frontend host, a Node.js backend host, and a reachable MongoDB database. Configure the production environment variables on the relevant hosting platforms, including the deployed frontend origin in `CLIENT_URL` and the deployed backend URLs in `VITE_API_URL` and `VITE_SOCKET_URL`.
-
-Add your real links before submission:
-
-- **Live application:** `<YOUR_DEPLOYED_APPLICATION_URL>`
-- **GitHub repository:** `<YOUR_GITHUB_REPOSITORY_URL>`
-- **Backend health check:** `<YOUR_DEPLOYED_BACKEND_URL>/api/health`
-
-Do not leave placeholder links in the final submission. Open each link in a private/incognito window to verify that evaluators can access it.
 
 ## Demo
 
-- **Demo video (3–5 minutes):** `<YOUR_DEMO_VIDEO_URL>`
+- **Demo video :** (https://drive.google.com/file/d/1qMwTBeEgkC8VG_YbjAxbaB-3H1oLVtfm/view?usp=sharing)
 
-Suggested demo flow:
-1. Introduce the problem and intended users.
-2. Register or log in.
-3. Create a group and demonstrate joining with an invite code.
-4. Add a subject/topic and assign work.
-5. Show task planning, study sessions, and progress summaries.
-6. Demonstrate real-time chat and notifications.
-7. Briefly explain the architecture and technology stack.
-
-Replace the placeholder with an accessible video link before submission.
 
 ## Future Improvements
 
