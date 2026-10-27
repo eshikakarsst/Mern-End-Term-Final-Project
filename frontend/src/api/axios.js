@@ -14,7 +14,7 @@ api.interceptors.response.use(res => res, async error => {
     original._retry = true;
     try {
 const { data } = await api.post("/auth/refresh");
-git add frontend/src/api/axios.js      localStorage.setItem("accessToken", data.accessToken); original.headers.Authorization = `Bearer ${data.accessToken}`; return api(original);
+      localStorage.setItem("accessToken", data.accessToken); original.headers.Authorization = `Bearer ${data.accessToken}`; return api(original);
     } catch { localStorage.removeItem("accessToken"); if (window.location.pathname !== "/login") window.location.href = "/login"; }
   }
   return Promise.reject(error);
